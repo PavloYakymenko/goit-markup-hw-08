@@ -1380,6 +1380,7 @@ img {
 @media screen and (max-width: 1199px) {
   .address-footer {
     align-items: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -1389,7 +1390,7 @@ img {
   }
 }
 
-/* Подписатся футер */
+/* Подписка футер */
 .subscribe {
   margin: 0 auto;
   display: flex;
