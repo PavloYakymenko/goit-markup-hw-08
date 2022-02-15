@@ -211,7 +211,7 @@ img {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  font-style: 400;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -259,17 +259,18 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -527,6 +528,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  height: 100%;
 }
 
 .mobile-close-btn {
@@ -1389,14 +1391,23 @@ img {
 
 /* Подписатся футер */
 .subscribe {
-  margin-left: auto;
+  margin: 0 auto;
   display: flex;
 }
 
 @media screen and (min-width: 768px) {
   .subscribe {
     display: flex;
-    margin-left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .subscribe-form {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 
@@ -1443,6 +1454,13 @@ img {
 .modal-form__mail:focus {
   outline: none;
   border-color: var(--header-color);
+}
+
+@media screen and (max-width: 480px) {
+  .modal-form__mail {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1199px) {
